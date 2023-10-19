@@ -1,0 +1,39 @@
+.container{
+
+    .first{
+        margin-top: 25px;
+        margin-left: 2%;
+
+        position: relative;
+
+        .btnGroup{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            overflow: auto;
+            white-space: nowrap;
+        }
+        
+
+    }
+
+
+    .second{
+        -webkit-box-shadow : 2px 4px 10px 1px rgba(0, 0 , 0, 0.47);
+        box-shadow : 2px 4px 10px 1px rgba(0, 0 , 0, 0.47);
+        padding: 50px;
+        margin: 20px;
+    
+        margin-top: 50px;
+        //margin-left: 100px;
+
+        display: flex;
+        justify-content: space-around;
+
+
+
+       
+        
+    }
+    
+}

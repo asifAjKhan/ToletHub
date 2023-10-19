@@ -1,0 +1,199 @@
+.header{
+    background-color: #006890 ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .headerContainer{
+        width: 100%;
+        max-width: 1024px;
+        margin: 20px 0px 100px 0px;
+
+        .headerList{
+            display: flex;
+            gap : 40px;
+            margin-bottom: 50px;
+
+            .headerListItem{
+                display: flex;
+                align-items: center;
+                gap : 5px;
+                cursor: pointer;
+                &:hover{
+                    color: rgb(255, 255, 47);
+                }
+                
+            }
+
+
+            // for dropdown property list 
+            .dropdown{
+                 position: relative;
+
+
+                 &:hover{
+                    .dropdown-content{
+                        display: block;
+                    }
+                 }
+                
+
+                .dropdown-content{
+                    display: none;
+                    position: absolute ;
+                    top : 40px;
+                    background-color: #fffdfd;
+                    min-width: 200px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                    border-radius: 3.4px;
+                    border: 1px solid #9d9b9b;
+
+                    .a {
+                        color:rgb(100, 98, 98);
+                        padding: 8px 10px;
+                        text-decoration: none;
+                        display: block;
+
+                        &:hover{
+                            background-color: #cccccd;
+                            color: black;
+                        }
+                    }
+
+                    
+                }
+
+
+                
+            }
+
+            .active{
+                border : 1px solid white;
+                padding: 10px;
+                border-radius: 20px;
+            }
+
+
+           
+            
+          
+        }
+
+        .headerDesc{
+            margin: 20px 0px;
+        }
+
+        .headerBtn{
+            background-color: #0071c2;
+            color: white;
+            font-weight: 500;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .headerSearch{
+            height: 30px;
+            background-color: white ;
+            border: 3px solid #febb02;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px 0px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: -25px;
+            width: 100%;
+            max-width: 1024px;
+
+
+            
+
+
+            .headerSearchItem{
+
+                display: flex;
+                align-items: center;
+                gap : 10px;
+                .headerIcon{
+                    color : lightgray;
+                }
+
+                .headerSearchText{
+                    color: lightgray;
+                }
+
+                .headerSearchInput {
+                    border: none;
+                    outline: none;
+                  }
+            }
+
+            .date{
+                
+                position:absolute;
+                top : 50px;
+                z-index: 2;
+            }
+
+
+            .options{
+                z-index: 2;
+                position: absolute;
+                top : 50px;
+                background-color: white;
+                color: gray;
+                border-radius: 5px;
+                -webkit-box-shadow : 0px 0px 10px -5px rgba(0,0,0,0.4);
+                box-shadow : 0px 0px 10px -5px rgba(0,0,0,0.4);
+            
+            }
+
+            .optionItem{
+                width: 200px;
+                display: flex;
+                justify-content: space-between;
+                margin: 10px;
+
+                .potionCounter{
+                    display: flex;
+                    align-items: center;
+                    gap : 10px;
+                    font-size: 12px;
+                    color : black;
+
+                    .optionCounterButton{
+                        width: 30px;
+                        height: 30px;
+                        border : 1px solid #006890;
+                        color : #006890;
+                        cursor: pointer;
+                        background-color: white;
+                        &:disabled{
+                            cursor : not-allowed;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+    .listMode{
+        margin: 20px 0px 0px 0px;
+    }
+
+
+
+
+    //drop down
+
+    
+
+    
+}
+
